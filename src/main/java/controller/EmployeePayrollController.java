@@ -1,5 +1,6 @@
 package controller;
 
+import dto.EmployeeDTO;
 import model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -47,8 +48,8 @@ public class EmployeePayrollController {
     }
     //update employee data for particular id
     @PutMapping("/employeepayrollservice/update/{id}")
-    public ResponseEntity<Employee> updateDataInRepo(@PathVariable Integer id,@RequestBody Employee employee){
-        return new ResponseEntity<Employee>(service.updateDataById(id,employee),HttpStatus.OK);
+    public ResponseEntity<Employee> updateDataInRepo(@PathVariable Integer id,@RequestBody EmployeeDTO employeeDTO){
+        return new ResponseEntity<Employee>(service.updateDataById(id,employeeDTO),HttpStatus.OK);
     }
     //delete employee data for particular id
     @DeleteMapping("/employeepayrollservice/delete/{id}")
