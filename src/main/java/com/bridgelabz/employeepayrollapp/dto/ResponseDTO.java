@@ -1,4 +1,4 @@
-package dto;
+package com.bridgelabz.employeepayrollapp.dto;
 
 import lombok.Data;
 
