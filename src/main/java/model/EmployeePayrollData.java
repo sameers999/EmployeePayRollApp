@@ -1,17 +1,22 @@
-package dto;
+package model;
 
-import java.time.LocalDate;
+import dto.EmployeeDTO;
 
-public class EmployeeDTO {
+public class EmployeePayrollData {
     private int employeeId;
-    public String name;
-    public long salary;
+    private String name;
+    private long salary;
 
-    public EmployeeDTO(int employeeId, String name, long salary) {
-        this.employeeId = employeeId;
-        this.name = name;
-        this.salary = salary;
+    public EmployeePayrollData() {
+
     }
+
+    public EmployeePayrollData(int empId, EmployeeDTO employeeDTO) {
+        this.employeeId = empId;
+        this.name = employeeDTO.name;
+        this.salary = employeeDTO.salary;
+    }
+
     public int getEmployeeId() {
         return employeeId;
     }
@@ -27,7 +32,6 @@ public class EmployeeDTO {
     public void setName(String name) {
         this.name = name;
     }
-
 
     public long getSalary() {
         return salary;
