@@ -1,43 +1,20 @@
 package model;
 
-import dto.EmployeeDTO;
+import dto.EmployeePayrollDTO;
+import lombok.Data;
 
-public class EmployeePayrollData {
+public @Data class EmployeePayrollData {
     private int employeeId;
     private String name;
     private long salary;
 
-    public EmployeePayrollData() {
+    public  EmployeePayrollData() {
 
     }
 
-    public EmployeePayrollData(int empId, EmployeeDTO employeeDTO) {
+    public EmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO) {
         this.employeeId = empId;
-        this.name = employeeDTO.name;
-        this.salary = employeeDTO.salary;
-    }
-
-    public int getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
+        this.name = empPayrollDTO.name;
+        this.salary = empPayrollDTO.salary;
     }
 }

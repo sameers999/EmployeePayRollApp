@@ -1,6 +1,6 @@
 package service;
 
-import dto.EmployeeDTO;
+import dto.EmployeePayrollDTO;
 import model.EmployeePayrollData;
 
 import java.util.List;
@@ -10,9 +10,9 @@ public interface IEmployeePayrollService {
 
     EmployeePayrollData getEmployeePayrollDataById(int empId);
 
-    EmployeePayrollData createEmployeePayrollData(EmployeeDTO employeeDTO);
+    EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO empPayrollDTO);
 
-    EmployeePayrollData updateEmployeePayrollData(int empId, EmployeeDTO employeeDTO);
+    EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO);
 
     void deleteEmployeePayrollData(int empId);
 }

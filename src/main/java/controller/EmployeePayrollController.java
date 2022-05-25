@@ -1,6 +1,6 @@
 package controller;
 
-import dto.EmployeeDTO;
+import dto.EmployeePayrollDTO;
 import dto.ResponseDTO;
 import model.EmployeePayrollData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,18 +35,18 @@ public class EmployeePayrollController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<ResponseDTO> addEmployeePayrollData(@RequestBody EmployeeDTO employeeDTO) {
+    public ResponseEntity<ResponseDTO> addEmployeePayrollData(@RequestBody EmployeePayrollDTO empPayrollDTO) {
         EmployeePayrollData empData = null;
-        empData = employeePayrollService.createEmployeePayrollData(employeeDTO);
+        empData = employeePayrollService.createEmployeePayrollData(empPayrollDTO);
         ResponseDTO respDTO = new ResponseDTO("Created Employee Payroll Data Successfully", empData);
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
 
 
     @PutMapping("/update/{empId}")
-    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable("empId") int empId, @RequestBody EmployeeDTO employeeDTO) {
+    public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable("empId") int empId, @RequestBody EmployeePayrollDTO empPayrollDTO) {
         EmployeePayrollData empData = null;
-        empData = employeePayrollService.updateEmployeePayrollData(empId, employeeDTO);
+        empData = employeePayrollService.updateEmployeePayrollData(empId, empPayrollDTO);
         ResponseDTO respDTO = new ResponseDTO("Updated Employee Payroll Data Successfully", empData);
         return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
     }
