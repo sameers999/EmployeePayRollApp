@@ -19,3 +19,11 @@
 2022-05-26 05:01:13:265 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:61] Started EmployeePayRollAppApplication in 2.454 seconds (JVM running for 3.221)
 2022-05-26 05:01:13:265 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:14] Employee Payroll App Started in PROD Environment
 2022-05-26 05:01:13:281 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:16] Employee Payroll DB User is root 
+2022-05-26 05:19:35:424 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:55] Starting EmployeePayRollAppApplication using Java 16.0.2 on DESKTOP-59PGQMA with PID 11980 (C:\Program Files\Apache Software Foundation\Tomcat 9.0\EmployeePayRollApp\target\classes started by root in C:\Program Files\Apache Software Foundation\Tomcat 9.0\EmployeePayRollApp)
+2022-05-26 05:19:35:424 [DEBUG] [restartedMain] [c.b.e.EmployeePayRollAppApplication:56] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-05-26 05:19:35:424 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:640] The following 1 profile is active: "dev"
+2022-05-26 05:19:38:153 [WARN] [restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-26 05:19:38:414 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:61] Started EmployeePayRollAppApplication in 3.321 seconds (JVM running for 4.04)
+2022-05-26 05:19:38:414 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:14] Employee Payroll App Started in PROD Environment
+2022-05-26 05:19:38:414 [INFO] [restartedMain] [c.b.e.EmployeePayRollAppApplication:16] Employee Payroll DB User is root 
+2022-05-26 05:43:34:825 [WARN] [HikariPool-1 housekeeper] [c.z.h.p.HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m27s682ms869µs700ns).
