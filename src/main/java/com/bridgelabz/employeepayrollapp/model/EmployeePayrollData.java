@@ -8,7 +8,7 @@ public @Data class EmployeePayrollData {
     private String name;
     private long salary;
 
-    public EmployeePayrollData() {
+    public  EmployeePayrollData() {
 
     }
 
